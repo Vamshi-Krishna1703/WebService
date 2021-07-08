@@ -1,0 +1,17 @@
+<div class="container">
+    <a routerLink = '/'> < Go back </a>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 col-sm-12">
+            <h3>Update Product</h3>
+            <form id="newProduct" name="newProduct" #productData="ngForm" (ngSubmit)= "update(productData.value)">
+                Name : <input type="text" name="name" id="name" [(ngModel)]="data.name" ><br>
+                Color : <input type="text" name="color" id="color" [(ngModel)]="data.color" ><br>
+
+                <input type="submit" value="Update Product">
+            </form>
+        </div>
+    </div>
+</div>
